@@ -1,6 +1,8 @@
-import Image from "next/image";
+// import Image from "next/image";
 import { Inter } from "next/font/google";
 import Link from "next/link";
+import Hero from "../components/Hero";
+import Pricing from "../components/Pricing";
 import Head from "next/head";
 import Layout, { siteTitle } from "@/components/Layout1";
 import utilStyle from "../styles/utils.module.css";
@@ -49,6 +51,8 @@ export default function Home({ allPostsData }) {
         <section>
           <h2>✍エンジニアのブログ</h2>
           <SprideTest />
+          <Hero />
+          <Pricing />
           <div className={styles.grid}>
             {allPostsData.map(({ id, title, date, thumbnail }) => (
               <article key={id}>

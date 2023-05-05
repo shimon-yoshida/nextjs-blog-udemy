@@ -21,10 +21,10 @@ const Header = () => {
           (scrollActive ? " shadow-md pt-0" : " pt-4")
         }
       >
-        <nav className="max-w-screen-xl px-6 sm:px-8 lg:px-16 mx-auto grid grid-flow-col py-3 sm:py-4">
+        <nav className="max-w-screen-3xl px-6 sm:px-8 lg:px-16 mx-auto grid grid-flow-col py-3 sm:py-4">
           <div className="col-start-1 col-end-2 flex items-center">
             <Link href="/" legacyBehavior>
-              <img className="h-10 w-auto" src="/images/yashima_logo.jpg" />
+              <img className="h-12 w-48" src="/images/yashima_logo.jpg" />
             {/* // <LogoVPN className="h-8 w-auto" /> */}
             </Link>
           </div>
@@ -147,7 +147,7 @@ const Header = () => {
                   d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
                 />
               </svg>
-              About
+              在校生・卒業生の方へ
             </LinkScroll>
             <LinkScroll
               activeClass="active"
@@ -179,7 +179,7 @@ const Header = () => {
                   d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"
                 />
               </svg>
-              Feature
+              キャンパス情報
             </LinkScroll>
             <LinkScroll
               activeClass="active"
@@ -211,7 +211,7 @@ const Header = () => {
                   d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
                 />
               </svg>
-              Pricing
+              資料請求・説明会情報
             </LinkScroll>
             <LinkScroll
               activeClass="active"
