@@ -10,7 +10,7 @@ const Layout = ({ children }) => {
   return (
     <>
     <div id="outer-container">
-    <Menu pageWrapId={ "page-wrap" } outerContainerId={ "outer-container" } right width={ 600 } className="place-self-end"/>
+    <Menu pageWrapId={ "page-wrap" } outerContainerId={ "outer-container" } right width={ 50 } className="place-self-end"/>
     <Header />
     <main id="page-wrap">
       

@@ -1,0 +1,55 @@
+.typing {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .typing_effect {
+    width: 25ch;
+    animation: typing 2s steps(22), effect .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 2em;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes effect {
+    50% {
+      border-color: transparent
+    }
+  }
+
+  .transparent_shadow {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .margin_right {
+    margin-right: 2em;
+  }
+  
+  .margin_bottom {
+    margin-bottom: 1em;
+  }
+  
+  .align_center {
+    text-align: center;
+  }
+  
+  .box_shadow {
+    box-shadow: 2px 4px 8px #3723a1;
+  }
+  
+  .drop_shadow {
+    filter: drop-shadow(2px 4px 8px #3723a1);
+  }
