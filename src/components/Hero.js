@@ -1,5 +1,5 @@
 import React, { useMemo } from "react";
-import Image from "next/image";
+// import Image from "next/image";
 import ButtonPrimary from "./misc/ButtonPrimary";
 import { motion } from "framer-motion";
 import getScrollAnimation from "../utils/getScrollAnimation"
@@ -60,7 +60,7 @@ const Hero = ({
             </div>
             <div className="flex w-full">
               <motion.div className="h-full w-full" variants={scrollAnimation}>
-                <Image
+                <img 
                   src="/assets/Illustration1.png"
                   alt="VPN Illustrasi"
                   quality={100}

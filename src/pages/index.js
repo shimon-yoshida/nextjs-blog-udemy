@@ -52,7 +52,7 @@ export default function Home({ allPostsData }) {
           <h2>✍エンジニアのブログ</h2>
           <SprideTest />
           <Hero />
-          <Pricing />
+          {/* <Pricing /> */}
           <div className={styles.grid}>
             {allPostsData.map(({ id, title, date, thumbnail }) => (
               <article key={id}>

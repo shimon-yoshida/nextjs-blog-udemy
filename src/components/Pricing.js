@@ -1,5 +1,5 @@
 import React, { useMemo } from "react";
-import Image from "next/image";
+// import Image from "next/image";
 import Testimoni from "./Testimoni";
 import ButtonPrimary from "./misc/ButtonPrimary";
 import ButtonOutline from "./misc/ButtonOutline.";
@@ -13,7 +13,7 @@ const Pricing = () => {
 
   return (
     <div
-      className="bg-gradient-to-b from-white-300 to-white-500 w-full py-14"
+      className="bg-gradient-to-b from-white to-white w-full py-14"
       id="pricing"
     >
       <div className="max-w-screen-xl  px-6 sm:px-8 lg:px-16 mx-auto flex flex-col w-full text-center justify-center">
@@ -23,14 +23,13 @@ const Pricing = () => {
               variants={scrollAnimation}
               className="text-2xl sm:text-3xl lg:text-4xl font-medium text-black-600 leading-relaxed"
             >
-              Choose Your Plan
+              八洲学園高等学校について
             </motion.h3>
             <motion.p
               variants={scrollAnimation}
               className="leading-normal w-10/12 sm:w-7/12 lg:w-6/12 mx-auto my-2 text-center"
             >
-              Let's choose the package that is best for you and explore it
-              happily and cheerfully.
+            よくあるご質問も含めて以下の内容を御覧ください。
             </motion.p>
           </ScrollAnimationWrapper>
           <div className="grid grid-flow-row sm:grid-flow-col grid-cols-1 sm:grid-cols-3 gap-4 lg:gap-12 py-8 lg:py-12 px-6 sm:px-0 lg:px-6">
@@ -46,7 +45,7 @@ const Pricing = () => {
                 }}
               >
                 <div className="p-2 lg:p-0 mt-2">
-                  <Image
+                  <img
                     src="/images/八洲学園高校はどんな学校？.png"
                     width={400}
                     height={300}
@@ -71,7 +70,7 @@ const Pricing = () => {
                 }}
               >
                 <div className="p-2 lg:p-0 mt-2">
-                  <Image
+                  <img
                     src="/images/キャンパス情報.jpg"
                     width={400}
                     height={400}
@@ -96,7 +95,7 @@ const Pricing = () => {
                 }}
               >
                 <div className="p-2 lg:p-0 mt-2">
-                  <Image
+                  <img
                     src="/images/学校生活.jpg"
                     width={400}
                     height={300}
