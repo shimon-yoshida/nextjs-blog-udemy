@@ -1,55 +1,101 @@
 .typing {
-    height: 80vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .typing_effect {
-    width: 25ch;
-    animation: typing 2s steps(22), effect .5s step-end infinite alternate;
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 3px solid;
-    font-family: monospace;
-    font-size: 2em;
-  }
-  
-  @keyframes typing {
-    from {
-      width: 0
-    }
-  }
-      
-  @keyframes effect {
-    50% {
-      border-color: transparent
-    }
-  }
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-  .transparent_shadow {
-    height: 80vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.typing_effect {
+  width: 25ch;
+  animation: typing 2s steps(22), effect 0.5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 2em;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
   }
-  
-  .margin_right {
-    margin-right: 2em;
+}
+
+@keyframes effect {
+  50% {
+    border-color: transparent;
   }
-  
-  .margin_bottom {
-    margin-bottom: 1em;
-  }
-  
-  .align_center {
-    text-align: center;
-  }
-  
-  .box_shadow {
-    box-shadow: 2px 4px 8px #3723a1;
-  }
-  
-  .drop_shadow {
-    filter: drop-shadow(2px 4px 8px #3723a1);
-  }
+}
+
+.transparent_shadow {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.margin_right {
+  margin-right: 2em;
+}
+
+.margin_bottom {
+  margin-bottom: 1em;
+}
+
+.align_center {
+  text-align: center;
+}
+
+.box_shadow {
+  box-shadow: 2px 4px 8px #3723a1;
+}
+
+.drop_shadow {
+  filter: drop-shadow(2px 4px 8px #3723a1);
+}
+
+.css_dynamic_sidebar {
+  overflow: hidden;
+  position: relative;
+  height: 400em;
+  max-width: 100em;
+  margin: auto;
+}
+
+.site_content {
+  margin: auto;
+}
+
+.nav_test {
+  display: flex;
+  height: 400em;
+  width: 100em;
+  flex-direction: column;
+  position: absolute;
+  right: 100%;
+  padding: 1em;
+  background-color: #0d2369;
+  transform: translateX(1em);
+  transition: 0.2s transform;
+}
+
+.nav_test:hover{
+  transform: translateX(100%);
+}
+
+.nav_test:focus-within {
+  transform: translateX(100%);
+}
+
+.nav_test .a_test {
+  white-space: pre;
+  color: rgb(243, 235, 235);
+}
+
+.nav_test .p_test {
+  font-size: 2em;
+  font-family: monospace;
+  text-align: center;
+}
+
+

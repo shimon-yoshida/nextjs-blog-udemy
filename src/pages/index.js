@@ -3,12 +3,14 @@ import { Inter } from "next/font/google";
 import Link from "next/link";
 import Hero from "../components/Hero";
 import Pricing from "../components/Pricing";
+import InfoYashima from "@/components/InfoYashima";
 import Head from "next/head";
 import Layout, { siteTitle } from "@/components/Layout1";
 import utilStyle from "../styles/utils.module.css";
 import styles from "../styles/Home.module.css";
 import { getPostsData } from "@/lib/post";
-import SprideTest from "./posts/splide";
+// import SprideTest from "../pages/posts/splide";
+import SprideTest from "../components/MainVisual";
 
 //ssgの場合
 export async function getStaticProps() {
@@ -51,7 +53,8 @@ export default function Home({ allPostsData }) {
         <section>
           <h2>✍エンジニアのブログ</h2>
           <SprideTest />
-          <Hero />
+          <InfoYashima />
+          {/* <Hero /> */}
           {/* <Pricing /> */}
           <div className={styles.grid}>
             {allPostsData.map(({ id, title, date, thumbnail }) => (

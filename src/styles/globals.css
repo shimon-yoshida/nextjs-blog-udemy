@@ -100,3 +100,48 @@ Note: Beware of modifying this element as it can break the animations - you shou
 .bm-overlay {
   background: rgba(0, 0, 0, 0.3);
 }
+
+
+
+/* .tab-contentは好きなようにスタイルできます */
+/* main {
+  max-width: 400px;
+  margin: 0 auto;
+}
+p {
+    text-align: justify;
+    font-family: monospace;
+    font-size: 13px;
+} */
+summary {
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: #f3f3f3;
+  color: #000;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  outline: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  position: relative;
+}
+details[open] summary ~ * {
+  animation: sweep .5s ease-in-out;
+}
+@keyframes sweep {
+  0%    {opacity: 0; margin-top: -10px}
+  100%  {opacity: 1; margin-top: 0px}
+}
+details > summary::after {
+  position: absolute;
+  content: "+";
+  right: 20px;
+}
+details[open] > summary::after {
+  position: absolute;
+  content: "-";
+  right: 20px;
+}
+details > summary::-webkit-details-marker {
+  display: none;
+}
