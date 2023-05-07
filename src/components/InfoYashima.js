@@ -18,7 +18,7 @@ const InfoYashima = () => {
                 variants={scrollAnimation}
                 className="text-2xl sm:text-3xl lg:text-4xl font-medium text-black-600 leading-relaxed"
               >
-                八洲学園高等学校について ああああああああああああ
+                八洲学園高等学校について
               </motion.h3>
               <motion.p
                 variants={scrollAnimation}
@@ -27,7 +27,7 @@ const InfoYashima = () => {
                 よくあるご質問も含めて以下の内容を御覧ください。
               </motion.p>
             </ScrollAnimationWrapper>
-            <div className="grid grid-flow-row sm:grid-flow-col grid-cols-1 sm:grid-cols-3 gap-4 lg:gap-12 py-8 lg:py-4 px-6 sm:px-0 lg:px-6">
+            <div className="grid grid-flow-row md:grid-flow-col grid-cols-2 md:grid-cols-3 gap-4 lg:gap-12 py-8 lg:py-4 px-6 sm:px-0 lg:px-6">
               <ScrollAnimationWrapper className="flex justify-center">
                 <motion.div
                   variants={scrollAnimation}
@@ -110,7 +110,7 @@ const InfoYashima = () => {
                 </motion.div>
               </ScrollAnimationWrapper>
             </div>
-            <div className="grid grid-flow-row sm:grid-flow-col grid-cols-1 sm:grid-cols-3 gap-4 lg:gap-12 py-8 lg:py-4 px-6 sm:px-0 lg:px-6">
+            <div className="grid grid-flow-row md:grid-flow-col grid-cols-2 md:grid-cols-3 gap-4 lg:gap-12 py-8 lg:py-4 px-6 sm:px-0 lg:px-6">
               <ScrollAnimationWrapper className="flex justify-center">
                 <motion.div
                   variants={scrollAnimation}
