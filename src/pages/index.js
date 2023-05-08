@@ -46,7 +46,7 @@ export default function Home({ allPostsData }) {
           <InfoYashima />
           {/* <Hero /> */}
           {/* <Pricing /> */}
-          <div className={styles.grid}>
+          {/* <div className={styles.grid}>
             {allPostsData.map(({ id, title, date, thumbnail }) => (
               <article key={id}>
                 <Link href={`/posts/${id}`}>
@@ -63,7 +63,7 @@ export default function Home({ allPostsData }) {
                 <small className={utilStyle.lightText}>{date}</small>
               </article>
             ))}
-          </div>
+          </div> */}
         </section>
       </Layout>
     </>

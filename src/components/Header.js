@@ -2,8 +2,9 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 // Import react scroll
 import { Link as LinkScroll } from "react-scroll";
-import ButtonOutline from "./misc/ButtonOutline."
+import ButtonOutline from "./misc/ButtonOutline.";
 // import LogoVPN from "../../public/images/yashima_logo.jpg";
+import Menu from "./Menu";
 
 const Header = () => {
   const [activeLink, setActiveLink] = useState(null);
@@ -17,15 +18,15 @@ const Header = () => {
     <>
       <header
         className={
-          "fixed top-0 w-full  z-30 bg-white transition-all " +
+          "fixed top-0 z-30 bg-white" +
           (scrollActive ? " shadow-md pt-0" : " pt-4")
         }
       >
-        <nav className="max-w-screen-3xl px-6 sm:px-8 lg:px-16 mx-auto grid grid-flow-col py-3 sm:py-4">
+        <nav className="px-6 lg:px-16 mx-auto grid grid-flow-col py-3 sm:py-4">
           <div className="col-start-1 col-end-2 flex items-center">
             <Link href="/" legacyBehavior>
               <img className="w-1/4" src="/images/yashima_logo.jpg" />
-            {/* // <LogoVPN className="h-8 w-auto" /> */}
+              {/* // <LogoVPN className="h-8 w-auto" /> */}
             </Link>
           </div>
           <ul className="hidden lg:flex col-start-4 col-end-8 text-black-500  items-center">
@@ -45,7 +46,7 @@ const Header = () => {
                   : " text-black-500 hover:text-orange-500 a")
               }
             >
-             在校生・卒業生の方へ
+              在校生・卒業生の方へ
             </LinkScroll>
             <LinkScroll
               activeClass="active"
@@ -84,6 +85,10 @@ const Header = () => {
               資料請求・説明会情報
             </LinkScroll>
           </ul>
+
+          {/* <ul className="lg:flex col-start-4 col-end-8 text-black-500  items-center">
+            <Menu right width={220} className="place-self-end" />
+          </ul> */}
           {/* <div className="col-start-10 col-end-12 font-medium flex justify-end items-center">
             <Link href="/" legacyBehavior>
               <a className="text-black-600 mx-2 sm:mx-4 capitalize tracking-wide hover:text-orange-500 transition-all">
