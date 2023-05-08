@@ -14,7 +14,6 @@ const Layout = ({ children }) => {
     <Header />
     <main id="page-wrap">
       
-      <p className="text-lg text-green-500">テストテスト</p>
       {children}
 
       <Footer />

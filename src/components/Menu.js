@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
-import { scaleDown as Menu } from "react-burger-menu";
+// import { scaleDown as Menu } from "react-burger-menu";
+import { slide as Menu } from "react-burger-menu";
 
 export default props => {
   return (
