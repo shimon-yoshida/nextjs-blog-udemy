@@ -19,11 +19,11 @@ export default function getSideInAnimation(props) {
   :
   {
     offscreen: {
-      x: "100%",
+      x: 80,
       opacity: 0,
     },
     onscreen: ({duration = 2} = {}) =>  ({
-      x: "25%",
+      x: 0,
       right:0,
       opacity: 1,
       transition: {

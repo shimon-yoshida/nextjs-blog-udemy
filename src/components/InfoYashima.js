@@ -200,12 +200,14 @@ const InfoYashima = () => {
       </div>
 
       <SideInTitle props={true} />
-      <SideInSection props={true}>
-        セクションフィールドテスト　左から
+      <SideInSection props={true} >
+      セクションフィールドテスト　左から
+
       </SideInSection>
 
       <SideInTitle props={false} />
       <SideInSection props={false}>
+
         セクションフィールドテスト　右から
       </SideInSection>
       <style jsx="true">{`

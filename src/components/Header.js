@@ -26,7 +26,6 @@ const Header = () => {
           <div className="col-start-1 col-end-2 flex items-center">
             <Link href="/" legacyBehavior>
               <img className="w-1/4" src="/images/yashima_logo.jpg" />
-              {/* // <LogoVPN className="h-8 w-auto" /> */}
             </Link>
           </div>
           <ul className="hidden lg:flex col-start-4 col-end-8 text-black-500  items-center">
@@ -101,7 +100,7 @@ const Header = () => {
       </header>
       {/* Mobile Navigation */}
 
-      <nav className="fixed lg:hidden bottom-0 left-0 right-0 z-20 px-4 sm:px-8 shadow-t ">
+      {/* <nav className="fixed lg:hidden bottom-0 left-0 right-0 z-20 px-4 sm:px-8 shadow-t ">
         <div className="bg-white sm:px-3">
           <ul className="flex w-full justify-between items-center text-black-500">
             <LinkScroll
@@ -202,7 +201,7 @@ const Header = () => {
             </LinkScroll>
           </ul>
         </div>
-      </nav>
+      </nav> */}
       {/* End Mobile Navigation */}
     </>
   );
