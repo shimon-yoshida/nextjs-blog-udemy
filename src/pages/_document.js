@@ -1,18 +1,3 @@
-<<<<<<< HEAD
-import { Html, Head, Main, NextScript } from 'next/document'
-
-export default function Document() {
-  return (
-    <Html lang="en">
-      <Head />
-      <body>
-        <Main />
-        <NextScript />
-      </body>
-    </Html>
-  )
-}
-=======
 import { Html, Head, Main, NextScript } from "next/document";
 
 export default function Document() {
@@ -32,4 +17,3 @@ export default function Document() {
     </Html>
   );
 }
->>>>>>> 64034b93b678dc7a1e9b2739282c0ee364c43942

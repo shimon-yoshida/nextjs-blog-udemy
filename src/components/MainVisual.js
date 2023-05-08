@@ -18,13 +18,9 @@ const MainVisual = () => {
             pauseOnFocus: false, // 矢印をクリックしてもスクロールを停止させない
             interval: 5000, // 自動再生の間隔
             speed: 3000, // スライダーの移動時間
-            }
-          }
+          }}
           className="flex justify-center"
-          
         >
-
-
           <SplideSlide>
             <img
               src="/images/スライダー1.png"
@@ -47,9 +43,8 @@ const MainVisual = () => {
             />
           </SplideSlide>
         </Splide>
-        <p className="center text-3xl text-white">私の居場所がここにある</p>
+        <p className="center text-sm md:text-3xl text-white">私の居場所がここにある</p>
       </div>
-
 
       {/* 画像の高さを揃えて表示させるために以下スタイルを適用 */}
       <style jsx="true">{`
@@ -63,7 +58,6 @@ const MainVisual = () => {
           transform: translate(-50%, -50%);
         }
 
-        }
       `}</style>
     </>
   );

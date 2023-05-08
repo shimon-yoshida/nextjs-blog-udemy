@@ -1,10 +1,3 @@
-<<<<<<< HEAD
-import '@/styles/globals.css'
-
-export default function App({ Component, pageProps }) {
-  return <Component {...pageProps} />
-}
-=======
 import "@/styles/globals.css";
 import { M_PLUS_2 } from "@next/font/google";
 
@@ -15,9 +8,8 @@ const inter = M_PLUS_2({
 });
 export default function App({ Component, pageProps }) {
   return (
-    <main className="--font-inter">
+    // <main className="--font-inter">
       <Component {...pageProps} />
-    </main>
+    // </main>
   );
 }
->>>>>>> 64034b93b678dc7a1e9b2739282c0ee364c43942
