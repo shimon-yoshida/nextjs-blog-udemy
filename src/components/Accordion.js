@@ -1,4 +1,3 @@
-import styles from "../styles/Yashima.module.css";
 
 const Accordion = ({ children, open,title }) => {
   return (
@@ -6,16 +5,16 @@ const Accordion = ({ children, open,title }) => {
       <div className="container mx-auto">
         {open ? (
           <details open>
-            <summary className="w-full bg-blue-700 text-white">
+            <summary className="w-full bg-gray-700 text-white">
                 {title}</summary>
-            <div className={`${styles.tab_content}`}>
+            <div>
             <span>{children}</span>
             </div>
           </details>
         ) : (
           <details>
-            <summary className="w-full bg-blue-700 text-white">{title}</summary>
-            <div className={`${styles.tab_content}`}>
+            <summary className="w-full bg-gray-700 text-white">{title}</summary>
+            <div>
             <span>{children}</span>
             </div>
           </details>
