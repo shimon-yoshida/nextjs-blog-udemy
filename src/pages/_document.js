@@ -8,6 +8,7 @@ export default function Document() {
           href="https://fonts.googleapis.com/css2?family=M+PLUS+1p&display=swap"
           rel="stylesheet"
         />
+        <meta name="viewport" content="width=device-width"></meta>
       </Head>
       {/* <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p&display=swap" rel="stylesheet" /> */}
       <body>

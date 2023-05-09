@@ -79,6 +79,15 @@ const MainVisual = () => {
           left: 70%;
           transform: translate(-50%, -50%);
         }
+
+        @media screen and (max-width: 640px) {
+          .center_2 {
+            position: absolute;
+            top: 75%;
+            left: 65%;
+            transform: translate(-50%, -50%);
+          }
+        }
       `}</style>
     </>
   );
