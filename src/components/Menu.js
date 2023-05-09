@@ -10,8 +10,8 @@ export default props => {
         ホームページ
       </Link>
 
-      <Link href="/page-2" className="menu-item" >
-        ページ2
+      <Link href="/tails" className="menu-item" >
+        Tails
         </Link>
 
         <Link href="/page-3" className="menu-item" >

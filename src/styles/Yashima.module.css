@@ -1,18 +1,55 @@
 .typing {
-  height: 80vh;
+  height: 150vh;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .typing_effect {
-  width: 25ch;
+  width: 22ch;
   animation: typing 2s steps(22), effect 0.5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
   border-right: 3px solid;
   font-family: monospace;
-  font-size: 2em;
+  font-size: 2.5em;
+}
+
+.typing_effect_2 {
+  width: 25ch;
+  opacity: 0;
+  animation: typing 2s steps(22), effect_1 0.5s;
+  animation-delay: 3s;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 2.5em;
+  animation-fill-mode: forwards
+}
+
+@media screen and (max-width: 640px) {/* 640px以下*/
+  .typing_effect {
+    width: 22ch;
+    animation: typing 2s steps(22), effect 0.5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 1.5em;
+  }
+  .typing_effect_2 {
+    width: 25ch;
+    opacity: 0;
+    animation: typing 2s steps(22), effect_1 0.5s;
+    animation-delay: 3s;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 1em;
+    animation-fill-mode: forwards
+  }
 }
 
 @keyframes typing {
@@ -24,6 +61,19 @@
 @keyframes effect {
   50% {
     border-color: transparent;
+  }
+  
+}
+@keyframes effect_1 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    border-color: transparent;
+  }
+  
+  100% {
+    opacity: 1;
   }
 }
 
@@ -79,7 +129,7 @@
   transition: 1s transform;
 }
 
-.nav_test:hover{
+.nav_test:hover {
   transform: translateX(100%);
 }
 
@@ -97,5 +147,3 @@
   font-family: monospace;
   text-align: center;
 }
-
-

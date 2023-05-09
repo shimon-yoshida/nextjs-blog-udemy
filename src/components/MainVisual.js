@@ -1,5 +1,6 @@
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css/sea-green"; // デフォルトのテーマを読み込んでいます（コアスタイルのみ読み込む設定も可能）
+import styles from "../styles/Yashima.module.css";
 
 const MainVisual = () => {
   return (
@@ -43,7 +44,22 @@ const MainVisual = () => {
             />
           </SplideSlide>
         </Splide>
-        <p className="center text-sm md:text-3xl text-white">私の居場所がここにある</p>
+        <div className="center text-white">
+          <div className={styles.typing}>
+            <p className={`${styles.typing_effect} text-2xl`}>私の居場所がここにある</p>
+            {/* <p className={`${styles.typing_effect}`}>私の居場所がここにある</p> */}
+          </div>
+        </div>
+        <div className="center_2 text-white">
+          <div className={styles.typing}>
+            <div className={styles.typing_effect_2}>
+              Yashima Gakuen HighSchool
+            </div>
+          </div>
+        </div>
+        {/* <div className={styles.typing}>
+          <div className={styles.typing_effect}>Yashima Gakuen HighSchool</div>
+        </div> */}
       </div>
 
       {/* 画像の高さを揃えて表示させるために以下スタイルを適用 */}
@@ -57,7 +73,12 @@ const MainVisual = () => {
           left: 50%;
           transform: translate(-50%, -50%);
         }
-
+        .center_2 {
+          position: absolute;
+          top: 85%;
+          left: 70%;
+          transform: translate(-50%, -50%);
+        }
       `}</style>
     </>
   );
