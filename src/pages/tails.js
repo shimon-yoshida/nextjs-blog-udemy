@@ -5,28 +5,33 @@ import BergerCss from "@/components/BergerCss";
 const tails = () => {
   return (
     <>
-      <h1>テスト・テスト</h1>
-
-<div className="animate-fade-in bg-slate-600 w-60 h-60">テスト</div>
-
-
-<BergerCss>
-  <div>テスト</div>
-</BergerCss>
-
-
-      <Accordion open={false} title={'テストタイトル１'}>
-      
-
-<text>
-
-あああああああああああああああああああああああああああああああああああああああああああああああああああ
-</text>
-
+      <Accordion open={false} title={"テストタイトル１"}>
+        <text>
+          あああああああああああああああああああああああああああああああああああああああああああああああああああ
+        </text>
       </Accordion>
 
-      <Accordion open={false} title={'テストタイトル2'}>aaa</Accordion>
-      <Accordion open={false} title={'テストタイトル3'}>ssss</Accordion>
+      <Accordion open={false} title={"テストタイトル2"}>
+        <img
+          src="/images/八洲学園高校はどんな学校？.png"
+          width={400}
+          height={300}
+          alt="八洲学園高校はどんな学校？"
+          className="rounded-xl"
+        />
+        aaa
+      </Accordion>
+      <Accordion open={false} title={"テストタイトル3"}>
+        ssss
+      </Accordion>
+      <h1>テスト・テスト</h1>
+
+      <div className="animate-fade-in bg-slate-600 w-60 h-60">テスト</div>
+
+      <BergerCss>
+        <div>テスト</div>
+      </BergerCss>
+
       <div className={styles.css_dynamic_sidebar}>
         <nav className={styles.nav_test}>
           <a className={`${styles.a_test}`} href="#">
@@ -41,7 +46,9 @@ const tails = () => {
         </nav>
 
         <div className={styles.site_content}>
-          <p className={`${styles.p_test}`}>Also work with Tab selector (for accessibility)</p>
+          <p className={`${styles.p_test}`}>
+            Also work with Tab selector (for accessibility)
+          </p>
           <p className={`${styles.p_test}`}>Hover over the sidebar</p>
           <a className={`${styles.a_test} text-white`} href="#">
             Menu #1
